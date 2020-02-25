@@ -1,0 +1,46 @@
+import { Command, CommandRequest<% if (pipeable) { %>, PipeNext<% } %> } from 'quro'
+
+export class <%= className %> extends Command {
+  name = '<%= commandName %>'
+
+  aliases = []
+
+  description = ''
+
+  argDefs = {}
+
+  /**
+   * Call on handle.
+   *
+   * @param request
+   */
+  onHandle(request: CommandRequest) {
+    const args = this.getArgs(request)
+
+    // Handle process here.
+  }
+<% if (pipeable) { %>
+  /**
+   * Call on pipe.
+   *
+   * @param request
+   * @param next
+   */
+  onPipe(request: CommandRequest, next: PipeNext) {
+    const args = this.getArgs(request)
+
+    // Pipeline process here.
+
+    return next
+  }<% } %>
+  /**
+   * Returns parsed arguments.
+   *
+   * @param request
+   */
+  getArgs(request: CommandRequest) {
+    return this.parseArgs<<%= className %>>(request)
+  }
+}
+
+export const <%= commandExportName %> = new <%= className %>()
