@@ -23,8 +23,6 @@ export default abstract class AppCommand extends Base {
     const { flags, args } = this.parse(AppCommand)
     const options = flags.options ? flags.options.split(',') : []
 
-    this.log(this.type)
-
     await super.generate('app', {
       type: this.type,
       path: args.path,
