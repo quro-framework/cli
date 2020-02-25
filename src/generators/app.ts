@@ -385,7 +385,6 @@ class AppGenerator extends Generator {
       this.fs.write('.gitignore', this.getGitignoreContent())
 
       if (this.type === 'bot') {
-        this.log(this.templatePath(`bot/src/index.${this.scriptExtension}`))
         this.fs.copyTpl(
           this.templatePath(`bot/src/index.${this.scriptExtension}`),
           this.destinationPath(`src/index.${this.scriptExtension}`),
