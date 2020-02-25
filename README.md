@@ -21,7 +21,7 @@ $ npm install -g @quro/cli
 $ quro COMMAND
 running command...
 $ quro (-v|--version|version)
-@quro/cli/0.0.12 darwin-x64 node-v12.14.1
+@quro/cli/0.0.13 darwin-x64 node-v12.14.1
 $ quro --help [COMMAND]
 USAGE
   $ quro COMMAND
@@ -51,7 +51,7 @@ OPTIONS
   --options=options  (yarn|typescript|eslint|prettier)
 ```
 
-_See code: [src/commands/bot.ts](https://github.com/hota1024/quro-cli/blob/v0.0.12/src/commands/bot.ts)_
+_See code: [src/commands/bot.ts](https://github.com/hota1024/quro-cli/blob/v0.0.13/src/commands/bot.ts)_
 
 ## `quro command NAME`
 
@@ -70,7 +70,7 @@ OPTIONS
   --pipeable  pipeable command
 ```
 
-_See code: [src/commands/command.ts](https://github.com/hota1024/quro-cli/blob/v0.0.12/src/commands/command.ts)_
+_See code: [src/commands/command.ts](https://github.com/hota1024/quro-cli/blob/v0.0.13/src/commands/command.ts)_
 
 ## `quro help [COMMAND]`
 

@@ -1,7 +1,7 @@
 {
   "name": "@quro/cli",
   "description": "quro cli",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "author": "hota1024 @hota1024",
   "bin": {
     "quro": "./bin/run"
